@@ -78,11 +78,11 @@ license. Please see the [license file](license.md) for more information.
 [ico-version]: https://img.shields.io/packagist/v/mlatjac/fren.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/mlatjac/fren.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/mlatjac/fren/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/12345678/shield
+[ico-styleci]: https://styleci.io/repos/222565004/shield
 
 [link-packagist]: https://packagist.org/packages/mlatjac/fren
 [link-downloads]: https://packagist.org/packages/mlatjac/fren
 [link-travis]: https://travis-ci.org/mlatjac/fren
-[link-styleci]: https://styleci.io/repos/12345678
+[link-styleci]: https://styleci.io/repos/222565004
 [link-author]: https://github.com/mlatjac
 [link-contributors]: ../../contributors
