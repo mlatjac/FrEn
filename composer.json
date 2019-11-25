@@ -1,6 +1,6 @@
 {
     "name": "mlatjac/fren",
-    "description": ":description",
+    "description": "Setup bilingual (French and English) Laravel projects easily.",
     "license": "MIT",
     "authors": [
         {

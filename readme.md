@@ -5,7 +5,10 @@
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
 
-This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
+Laravel package that supplies language tracking and language switching services and pulls in commonly used 
+multi-language packages to create a sane basis for bilingual (French and English) Laravel apps. 
+
+Take a look at [contributing.md](contributing.md) to see a to do list.
 
 ## Installation
 
@@ -16,6 +19,34 @@ $ composer require mlatjac/fren
 ```
 
 ## Usage
+
+### Language middleware
+
+The Language middleware sets the app's current locale to the currently selected language.
+
+The package inserts this middleware in the middleware stack for all web routes.
+
+To specifically invoke this middleware on a route, you can use its 'lang' alias, as in:
+
+``` php
+Route::get('/', function () {
+    return view('welcome');
+})->middleware('lang');
+```
+
+### Language switching routes
+
+This package registers language switching routes. These routes update the currently
+selected language and redirect back to the calling url.
+
+The url '/lang/en' will switch the current language to English, the '/lang/fr' will switch the
+current language to French.
+
+Use its route name 'lang.switch' along with its languageCode parameter with url builders, as in:
+
+``` php
+url(route('lang.switch',['languageCode' => 'en']))
+```
 
 ## Change log
 
