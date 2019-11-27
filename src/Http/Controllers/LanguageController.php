@@ -2,12 +2,9 @@
 
 namespace Mlatjac\FrEn\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Session;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\App;
 use Illuminate\Routing\Controller as BaseController;
-
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 
 class LanguageController extends BaseController
 {
@@ -20,10 +17,9 @@ class LanguageController extends BaseController
         return back();
     }
 
-
     public function redirectToLanguageExplicitUrl()
     {
         // Add _en to current route name and redirect
-        return redirect(route(Route::currentRouteName() . '_en'), 301);
+        return redirect(route(Route::currentRouteName().'_en'), 301);
     }
 }

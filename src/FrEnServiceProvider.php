@@ -2,9 +2,9 @@
 
 namespace Mlatjac\FrEn;
 
+use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 use Mlatjac\FrEn\Http\Middleware\Language;
-use Illuminate\Routing\Router;
 
 class FrEnServiceProvider extends ServiceProvider
 {
@@ -56,7 +56,7 @@ class FrEnServiceProvider extends ServiceProvider
     {
         return ['fren'];
     }
-    
+
     /**
      * Console-specific booting.
      *
